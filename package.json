@@ -1,0 +1,49 @@
+{
+  "name": "@cycberX/oneapi",
+  "version": "1.1.0",
+  "description": "Unified JavaScript & TypeScript SDK for OneAPI Gateway with Automated Multi-Provider Failover",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "types",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test:import": "node -e \"import('./src/index.js').then(() => console.log('OneAPI SDK loaded successfully'))\"",
+    "example:chat": "node examples/chat.js",
+    "example:all": "node examples/all-domains.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "oneapi",
+    "api-gateway",
+    "failover",
+    "multi-provider",
+    "gemini",
+    "groq",
+    "openrouter",
+    "weather",
+    "music",
+    "news",
+    "environment",
+    "sdk"
+  ],
+  "author": "OneAPI Team",
+  "homepage": "https://hackthon-seven-gules.vercel.app/",
+  "license": "MIT"
+}
