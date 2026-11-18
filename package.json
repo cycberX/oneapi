@@ -1,5 +1,5 @@
 {
-  "name": "@cycberX/oneapi",
+  "name": "oneapi",
   "version": "1.1.0",
   "description": "Unified JavaScript & TypeScript SDK for OneAPI Gateway with Automated Multi-Provider Failover",
   "type": "module",
@@ -43,7 +43,7 @@
     "environment",
     "sdk"
   ],
-  "author": "OneAPI Team",
-  "homepage": "https://hackthon-seven-gules.vercel.app/",
+  "author": "Mr. Sanskar Bandgar (CycberX)",
+  "homepage": "https://oneapi-ten.vercel.app/",
   "license": "MIT"
 }
