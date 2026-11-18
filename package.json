@@ -1,6 +1,6 @@
 {
-  "name": "oneapi",
-  "version": "1.1.0",
+  "name": "@cycberx/oneapi",
+  "version": "1.1.1",
   "description": "Unified JavaScript & TypeScript SDK for OneAPI Gateway with Automated Multi-Provider Failover",
   "type": "module",
   "main": "./src/index.js",

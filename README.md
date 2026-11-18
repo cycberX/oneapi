@@ -1,4 +1,4 @@
-# @oneapi/sdk
+# @cycberx/oneapi
 
 > Unified JavaScript & TypeScript SDK for **OneAPI Gateway** with Automated Multi-Provider Failover.
 
@@ -13,7 +13,7 @@
 
 - 🛡️ **Zero External Dependencies** — Built on native `fetch` and web standards for maximum performance and security.
 - 🔄 **Automated Multi-Provider Failover** — If a primary provider experiences rate limits, downtime, or timeouts, requests fail over instantly and transparently to backup providers.
-- 🌐 **Pre-configured Production Gateway** — Pre-configured to point directly to `https://hackthon-seven-gules.vercel.app/api/v1`.
+- 🌐 **Pre-configured Production Gateway** — Pre-configured to point directly to `https://oneapi-ten.vercel.app/`.
 - 📊 **Telemetry Capture** — Inspect `providerUsed`, `usedFallback`, `fallbackReason`, and `latencyMs` directly on responses.
 - 📦 **Native TypeScript Definitions** — Complete type declarations out of the box.
 
@@ -22,7 +22,7 @@
 ## 📦 Installation
 
 ```bash
-npm install @oneapi/sdk
+npm install @cycberx/oneapi
 ```
 
 ---
@@ -30,7 +30,7 @@ npm install @oneapi/sdk
 ## 🚀 Quick Start
 
 ```javascript
-import { OneAPI } from '@oneapi/sdk';
+import { OneAPI } from '@cycberx/oneapi';
 
 // Initialize with your OneAPI key
 const oneapi = new OneAPI({
@@ -55,14 +55,13 @@ console.log('Latency:', response.latencyMs, 'ms');
 
 The SDK automatically defaults to the production OneAPI cloud gateway:
 ```
-https://hackthon-seven-gules.vercel.app/api/v1
+https://oneapi-ten.vercel.app
 ```
 
 You can customize this via environment variables without changing your application code:
 
 ```bash
 # In your .env file
-ONEAPI_BASE_URL=https://hackthon-seven-gules.vercel.app/api/v1
 ONEAPI_API_KEY=sk_live_your_key_here
 ONEAPI_PROJECT_ID=default
 ```
@@ -170,7 +169,7 @@ console.log('Registered providers:', providers.totalRegistered);
 The SDK throws descriptive `OneAPIError` instances with HTTP status code and provider metadata:
 
 ```javascript
-import { OneAPI, OneAPIError } from '@oneapi/sdk';
+import { OneAPI, OneAPIError } from '@cycberx/oneapi';
 
 try {
   const res = await oneapi.ai.chat({ prompt: 'Hello' });
@@ -188,5 +187,5 @@ try {
 
 ## 📄 License
 
-MIT © 2026 OneAPI Team
+MIT © 2026 Mr. Sanskar Bandgar (CycberX)
 
